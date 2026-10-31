@@ -1,0 +1,19 @@
+ #profile-cards div {
+    padding: 16px;
+    margin: 12px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0,2);
+    font-family: Arial, sans-serif;
+ 
+}
+ 
+ #profile-cards {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ #profile-cards div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0,3);
+ }  

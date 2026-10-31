@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Att göra-lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Att göra-lista</h1>
+    <input type="text" id="todoInput" placeholder="Vad behöver du göra?">
+    <button id="addBtn">Lägg till</button>
+    <ul id="todoList"></ul>
+    <p id="message"></p>
+   
+    <h1>Kalkylator</h1>
+    <input type="number" id="num1" placeholder="Tal 1">
+    <input type="number" id="num2" placeholder="Tal 2">
+    <button id="calcAddBtn">+</button>
+    <button id="calcMulBtn">*</button>
+    <button id="calcSubBtn">-</button>
+    <p id="result"></p>
+
+    <h1>Färgad siffra</h1>
+    <input type="number" id="colorInput" placeholder="0-10">
+    <button id="colorBtn">Visa</button>
+    <p id="colorResult"></p>
+
+    <!-- Övning 2: Klasslista -->
+     <h1>Klasslista</h1>
+     <label><input type="radio" name="education" value="Alla" checked> Alla</label>
+     <label><input type="radio" name="education" value="Frontend"> Frontend</label>
+     <label><input type="radio" name="education" value="Backend"> backend</label>
+     <label><input type="radio" name="education" value="Fullstack"> Fullstack</label>
+     <br>
+
+     <label><input type="checkbox" name="city" value="Malmö"> Malmö</label>
+    <label><input type="checkbox" name="city" value="Stockholm"> Stockholm</label>
+    <label><input type="checkbox" name="city" value="Göteborg"> Göteborg</label>
+    <label><input type="checkbox" name="city" value="Lund"> Lund</label>
+    <label><input type="checkbox" name="city" value="Uppsala"> Uppsala</label>
+    <label><input type="checkbox" name="city" value="Helsingborg"> Helsingborg</label>
+    <br>
+    
+    <select id="yearSelect">
+    <option value="Alla">Alla årskurser</option>
+    <option value="1">År 1</option>
+    <option value="2">År 2</option>
+    <option value="3">År 3</option>
+</select>
+
+     <label><input type="checkbox" id="teacherCheck"> I am a teacher, I promise</label>
+     <button id="showStudentsBtn">Show student</button>
+     <ul id="studentList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>  
+ 
