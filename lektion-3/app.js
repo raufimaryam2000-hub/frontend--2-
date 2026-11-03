@@ -109,4 +109,4 @@ addPlayerBtn.addEventListener("click", async function () {
     } catch (error) {
         messageEl.textContent = "Kunde inte hämta spelare, försök igen.";
     }
-});   
+});    
