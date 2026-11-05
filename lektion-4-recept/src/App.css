@@ -1,0 +1,139 @@
+/* Navbar: mörkgrön bakgrund, vit text, länkar på en rad */
+nav {
+  background: darkgreen;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+} 
+
+.recipe-info {
+  height: 200px;
+  background-color: lightyellow;
+  color: black;
+}
+
+.instructions {
+  background-color: #ffd8a8;
+  min-height: 200px;
+  color: black;
+}  
+
+.recipe-info h1,
+.instructions h2 {
+  color: black;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #222;
+  display: block;
+  place-items: initial;
+}
+
+section,
+article {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+a {
+  color: darkgreen;
+} 
+
+h1,
+h2 {
+  color: #222;
+}
+
+.recipe-info {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 1rem;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.instructions {
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem calc((100% - 700px) / 2);
+  min-height: 200px;
+}
+
+section,
+article {
+  margin-bottom: 1rem;
+} 
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Alla sektioner: samma innehållsbredd, centrerat */
+section,
+article {
+  box-sizing: border-box;
+  max-width: none;
+  margin: 0;
+  padding: 2rem calc((100% - 700px) / 2);
+}
+
+.recipe-info {
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 4px solid #f0e68c;
+}
+
+.recipe-info h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+}
+
+.recipe-info p {
+  font-style: italic;
+  margin: 0;
+}
+
+.instructions {
+  min-height: auto;
+}
+
+h2 {
+  border-bottom: 2px solid darkgreen;
+  padding-bottom: 0.3rem;
+  display: block;
+  width: fit-content;
+  margin-bottom: 1rem;
+} 
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+article a {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+article a:hover {
+  color: #2e7d32;
+}  
