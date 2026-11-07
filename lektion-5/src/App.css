@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.profil {
+  margin: 15px 0;
+}
+
+.info {
+  margin-top: 10px;
+} 
