@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 
+const EUR_TO_SEK = 11; // ny: fast växelkurs
+
 function ATM() {
   const [saldo, setSaldo] = useState(1000);
   const [depositAmount, setDepositAmount] = useState(0);
   const [withdrawAmount, setWithdrawAmount] = useState("");
+  const [currency, setCurrency] = useState("SEK"); // ny: vald valuta
   const [message, setMessage] = useState("");
 
   function handleDeposit() {
@@ -24,12 +27,15 @@ function ATM() {
       return;
     }
 
-    if (amount > saldo) {
+    // ny: räkna om till SEK
+    const amountInSek = currency === "EUR" ? amount * EUR_TO_SEK : amount;
+
+    if (amountInSek > saldo) {
       setMessage("Insufficient funds");
       return;
     }
 
-    setSaldo(saldo - amount);
+    setSaldo(saldo - amountInSek);
     setMessage("");
   }
 
@@ -61,6 +67,11 @@ function ATM() {
           value={withdrawAmount}
           onChange={(e) => setWithdrawAmount(e.target.value)}
         />
+        {/* ny: dropdown för valuta */}
+        <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+          <option value="SEK">SEK</option>
+          <option value="EUR">EUR</option>
+        </select>
         <button onClick={handleWithdraw}>Ta ut</button>
       </div>
 
