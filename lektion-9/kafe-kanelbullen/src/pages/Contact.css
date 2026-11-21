@@ -1,0 +1,10 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

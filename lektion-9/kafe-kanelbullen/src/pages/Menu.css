@@ -1,0 +1,34 @@
+.menu-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 2px solid #ecdcc8;
+  text-align: center;
+}
+
+.menu-emoji {
+  font-size: 2.5rem;
+}
+
+.menu-name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.menu-price {
+  font-weight: 700;
+  color: #9a5b23;
+}

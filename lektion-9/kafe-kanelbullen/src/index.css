@@ -1,0 +1,22 @@
+/* Global CSS – gäller hela sidan. Varje komponent har sin egen CSS-fil bredvid sig. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fbf6ef;
+  color: #3b2a1e;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

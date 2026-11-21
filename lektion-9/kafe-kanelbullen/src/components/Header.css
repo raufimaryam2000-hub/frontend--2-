@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #3b2a1e;
+  color: #fbf6ef;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.link:hover {
+  border-bottom-color: #c98a4b;
+}
+
+/* TODO 3: NavLink ger automatiskt klassen "active" till länken för sidan man är på.
+   Skapa regeln .link.active, t.ex. med färgen #e8b27a och en border-bottom i samma färg. */
